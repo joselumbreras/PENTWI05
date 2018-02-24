@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>PENTWB05 Sample</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>        
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Notas</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <form>
+                            <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="note-title">Título</label>
+                                        <input id="note-title" type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="note-author">Autor</label>
+                                        <input id="note-author" type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="note-tags">Etiquetas</label>
+                                        <input id="note-tags" type="text" class="form-control">
+                                    </div>                                    
+                                    <button id="note-save" class="btn btn-primary">Guardar</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="note-text">Escriba su nota aquí</label>
+                                    <div style="height: 100%;">
+                                        <textarea id="note-text" class="form-control" cols="50" rows="5"></textarea>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </form>                      
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table id="notes-table" class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Titulo</th>
+                                        <th>Autor</th>
+                                        <th>Etiquetas</th>
+                                        <th>Contenido</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">José Darío Lumbreras Márquez - JLMQ</span>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>
